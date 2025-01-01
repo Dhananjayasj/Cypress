@@ -6,7 +6,7 @@ class dashboardPage{
         return 'a[href="/web/index.php/performance/viewPerformanceModule"]'
     }
     timeandWorkHeader(){
-        return ''
+        return 'abcd'
     }
 }
 const dashBoard = new dashboardPage()
