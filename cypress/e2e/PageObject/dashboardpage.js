@@ -8,6 +8,7 @@ class dashboardPage{
     timeandWorkHeader(){
         return 'abcd'
     }
+
 }
 const dashBoard = new dashboardPage()
 export default dashBoard

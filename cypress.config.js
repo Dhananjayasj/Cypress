@@ -21,7 +21,7 @@ module.exports = defineConfig({
   
   e2e: {
     baseUrl: 'https://opensource-demo.orangehrmlive.com',
-    "video": true,
+    "video": false,
     //"videosFolder":"cypress/recordedvideos",
     defaultCommandTimeout: 20000,
     pageLoadTimeout: 120000,
