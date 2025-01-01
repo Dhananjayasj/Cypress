@@ -6,7 +6,7 @@ class dashboardPage{
         return 'a[href="/web/index.php/performance/viewPerformanceModule"]'
     }
     timeandWorkHeader(){
-        return ' hjg'
+        return ' abcd'
     }
 
 }
