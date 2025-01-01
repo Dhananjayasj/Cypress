@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-30T06:47:55.525Z",
+    "end": "2024-12-30T06:49:05.899Z",
+    "duration": 70374,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33144c8a-139f-4884-afbc-4881b803264e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smoketest\\clickonhiddenelements.cy.js",
+      "file": "cypress\\e2e\\smoketest\\clickonhiddenelements.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6e659f8f-b387-48b1-ae5e-57b62fd2f900",
+          "title": "click spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "CheckBox",
+              "fullTitle": "click spec CheckBox",
+              "timedOut": null,
+              "duration": 69965,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n  \"value\": \"cypress\\\\e2e\\\\smoketest\\\\clickonhiddenelements.cy.js\"\n}",
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\ncy.get(_loginpage.default.userNameInput()).type(\"Admin\");\ncy.get(_loginpage.default.passwordInput()).type(\"admin123{enter}\");\ncy.contains(\"PIM\").click();\ncy.get('input[type=\"checkbox\"]').check([\"2\", \"3\"], {\n  force: true\n});\n// cy.get('input[type=\"checkbox\"]').uncheck({force:true})",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"checkbox\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"checkbox\"]`, but never found it.\n    at Context.eval (webpack://cypressautomation/./cypress/e2e/smoketest/clickonhiddenelements.cy.js:48:9)",
+                "diff": null
+              },
+              "uuid": "0a7691f8-6dee-4522-b0e3-fa05b44fa9fc",
+              "parentUUID": "6e659f8f-b387-48b1-ae5e-57b62fd2f900",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0a7691f8-6dee-4522-b0e3-fa05b44fa9fc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 69965,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Orange HRM Test result",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
